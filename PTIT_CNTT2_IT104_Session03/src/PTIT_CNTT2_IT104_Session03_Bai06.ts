@@ -13,3 +13,4 @@ num3=num1/num2
 console.log(num3);
 num3=num4+num5
 console.log(num3);
+// num4+num5=="10true" vi num4 la string len khi + se thuc hien noi chuoi
