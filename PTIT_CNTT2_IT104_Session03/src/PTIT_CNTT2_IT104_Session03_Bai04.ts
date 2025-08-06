@@ -12,3 +12,4 @@ if(a===b){
 }else{
     console.log(false);
 }
+//a==b true vi so sach == chi mang tinh tuong doi con a===b false vi === la tuyet doi
