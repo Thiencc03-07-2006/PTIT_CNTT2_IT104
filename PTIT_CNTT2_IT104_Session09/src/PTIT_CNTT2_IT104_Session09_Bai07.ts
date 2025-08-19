@@ -2,8 +2,7 @@ const updatesUser = <T extends User>(obj1: T, obj2: Partial<T>): T | string => {
   if ("id" in obj2) {
     return "Id cannot be changed";
   }
-  Object.assign(obj1, obj2);
-  return obj1;
+  return { ...obj1, ...obj2 };
 };
 interface User {
   id: number;
