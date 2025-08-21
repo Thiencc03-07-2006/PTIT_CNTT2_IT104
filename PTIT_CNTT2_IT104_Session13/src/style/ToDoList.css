@@ -1,0 +1,34 @@
+#toDoList {
+  border-collapse: collapse;
+  color: gray;
+}
+#toDoList tr {
+  border-bottom: 1px solid lightgray;
+}
+#toDoList th,
+#toDoList td {
+  padding: 10px;
+}
+#toDoList button {
+  padding: 5px;
+  border-radius: 5px;
+}
+#toDoList tr td:last-child button:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+#toDoList .btn-green {
+  background-color: lawngreen;
+  color: yellowgreen;
+  border: 1px solid yellowgreen;
+}
+#toDoList .btn-orange {
+  background-color: rgba(255, 160, 122, 0.5);
+  color: orange;
+  border: 1px solid orange;
+}
+#toDoList .btn-red {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: red;
+  border: 1px solid red;
+}
