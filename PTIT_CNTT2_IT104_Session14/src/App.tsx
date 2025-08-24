@@ -1,4 +1,5 @@
 import "./style/reset.css";
+import "./style/form.css";
 import Exerice01 from "./components/Exerice01";
 import Exerice02 from "./components/Exerice02";
 import PTIT_CNTT2_IT104_Session14_Bai03 from "./components/PTIT_CNTT2_IT104_Session14_Bai03";

@@ -1,0 +1,25 @@
+form {
+  border: 1px solid gray;
+  width: max-content;
+  padding: 10px;
+}
+input {
+  border: 1px solid gray;
+  width: max-content;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+button[type="submit"] {
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+}
+button[type="submit"]:hover {
+  filter: brightness(0.8);
+}
