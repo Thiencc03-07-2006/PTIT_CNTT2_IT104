@@ -1,0 +1,51 @@
+form {
+  border: 1px solid gray;
+  width: max-content;
+  padding: 10px;
+}
+input {
+  border: 1px solid gray;
+  width: max-content;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+button[type="submit"],
+button {
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+}
+button[type="submit"]:hover {
+  filter: brightness(0.8);
+}
+td,
+th {
+  padding: 10px;
+}
+tr {
+  border-bottom: 1px solid gray;
+}
+thead tr {
+  border-bottom: 2px solid gray;
+}
+.list-paper button {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+}
+.list-paper .select {
+  background: blue;
+  color: white;
+}
