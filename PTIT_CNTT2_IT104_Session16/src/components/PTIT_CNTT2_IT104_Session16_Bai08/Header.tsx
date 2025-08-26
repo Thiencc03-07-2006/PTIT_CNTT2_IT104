@@ -1,6 +1,9 @@
 import { Component } from "react";
-
-export default class Header extends Component {
+interface HeaderProps {
+  handleClickShowCart: () => void;
+  length: number;
+}
+export default class Header extends Component<HeaderProps> {
   render() {
     return (
       <div
@@ -20,7 +23,10 @@ export default class Header extends Component {
             Danh sach san pham
           </a>
         </div>
-        <div style={{ display: "flex" }}>
+        <div
+          style={{ display: "flex" }}
+          onClick={this.props.handleClickShowCart}
+        >
           🛒
           <span
             style={{
@@ -31,7 +37,7 @@ export default class Header extends Component {
               textAlign: "center",
             }}
           >
-            3
+            {this.props.length}
           </span>
         </div>
       </div>
