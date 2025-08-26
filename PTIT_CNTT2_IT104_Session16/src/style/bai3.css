@@ -1,0 +1,38 @@
+#bai3 button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+#bai3 button:hover {
+  filter: brightness(0.8);
+}
+#bai3 .Primary {
+  background-color: blue;
+  color: white;
+}
+#bai3 .Secondary {
+  background-color: gray;
+  color: white;
+}
+#bai3 .Success {
+  background-color: green;
+  color: white;
+}
+#bai3 .Warning {
+  background-color: yellow;
+}
+#bai3 .Danger {
+  background-color: red;
+  color: white;
+}
+#bai3 .Info {
+  background-color: aqua;
+}
+#bai3 .Light {
+  background-color: white;
+}
+#bai3 .Dark {
+  background-color: black;
+  color: white;
+}
