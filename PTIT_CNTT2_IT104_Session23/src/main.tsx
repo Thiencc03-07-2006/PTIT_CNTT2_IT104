@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import routers1 from "./routes/PTIT_CNTT2_IT104_Session23_Bai01";
 // import routers3 from "./routes/PTIT_CNTT2_IT104_Session23_Bai03";
@@ -14,9 +13,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // ]);
 import Register from "./pages/PTIT_CNTT2_IT104_Session23_Bai09/Register";
 import Login from "./pages/PTIT_CNTT2_IT104_Session23_Bai09/Login";
+import Home from "./pages/PTIT_CNTT2_IT104_Session23_Bai10/Home";
 const router = createBrowserRouter([
   { path: "/register", element: <Register /> },
   { path: "/login", element: <Login /> },
+  { path: "/", element: <Home /> },
 ]);
 
 createRoot(document.getElementById("root")!).render(

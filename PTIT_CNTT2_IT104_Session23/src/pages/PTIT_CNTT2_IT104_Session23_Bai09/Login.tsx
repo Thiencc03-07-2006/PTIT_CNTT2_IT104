@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 interface Acc {
   id: number;
   email: string;
@@ -13,6 +13,7 @@ export default function Login() {
     email: string;
     password: string;
   }>({ email: "", password: "" });
+  const navigate = useNavigate();
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput({ ...inputAcc, [e.target.name]: e.target.value });
   };
@@ -26,6 +27,7 @@ export default function Login() {
       if (index !== -1) {
         if (listAcc[index].password === inputAcc.password.trim()) {
           localStorage.setItem("nowAcc", JSON.stringify(listAcc[index]));
+          navigate("/");
           return;
         }
       }
@@ -39,7 +41,7 @@ export default function Login() {
         className="flex flex-col border-[2px] border-black p-[10px] rounded-[10px]"
       >
         <h1 className="text-center">
-          <strong>Create Account</strong>
+          <strong>Login Account</strong>
         </h1>
         <br />
         <p>Your email</p>
@@ -62,12 +64,12 @@ export default function Login() {
         />
         <br />
         <button className="w-[100%] bg-blue-500 rounded-[10px] p-[5px] text-white hover:brightness-80">
-          Create an account
+          Login an account
         </button>
         <p>
           Already have an account?{" "}
-          <Link to="/login">
-            <strong>Login here</strong>
+          <Link to="/register">
+            <strong>Register here</strong>
           </Link>
         </p>
       </form>

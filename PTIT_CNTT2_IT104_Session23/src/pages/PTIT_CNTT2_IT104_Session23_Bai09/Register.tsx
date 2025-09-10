@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 interface Acc {
   id: number;
   email: string;
@@ -14,6 +14,7 @@ export default function Register() {
     password: string;
     confirmPassword: string;
   }>({ email: "", password: "", confirmPassword: "" });
+  const navigate = useNavigate();
   useEffect(
     () => localStorage.setItem("listAcc", JSON.stringify(listAcc)),
     [listAcc]
@@ -40,6 +41,7 @@ export default function Register() {
             password: inputAcc.password,
           },
         ]);
+        navigate("/login");
         return;
       }
     }
