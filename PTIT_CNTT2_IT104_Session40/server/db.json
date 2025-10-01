@@ -1,0 +1,21 @@
+{
+  "categorys": [
+    {
+      "id": "bccb9b8b-8361-40d0-81c6-61a180904cc1",
+      "name": "test2",
+      "description": "unknow",
+      "status": "active"
+    }
+  ],
+  "products": [
+    {
+      "id": "e88a3755-1127-40be-81f5-8f25658f908e",
+      "code": "test",
+      "name": "test",
+      "category": "test2",
+      "price": 123000,
+      "image": "https://res.cloudinary.com/dk4uhrl7t/image/upload/v1759325096/o5vmeggenw1ba2drnbav.gif",
+      "status": "active"
+    }
+  ]
+}
